@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        fieldset {
+            width: 50%;
+            margin: auto;
+            margin-top: 30vh;
+            background-color: white;
+        }
+        label{
+            color: green;
+        }
+        input[type=submit]{
+            margin-top: 10px;
+            width: 100%;
+            padding: 2px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        #essai{
+            color: red;
+            font-size: 40px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Deviner un nombre </legend>
+        <h1>Trouver le bon nombre :</h1>
+        <hr>
+
+        <p style="color: green;">Vous devez un nombre entre 10 et 100. Vous n'avez que <strong id="essai"></strong> essais.</p>
+        <p>Entrez votre nombre. <span id="message"></span></p>
+        <label for="nombre">Votre choix : </label>
+        <input type="number" id="nombre"><br>
+        <input type="submit" value="Essayer" onclick="trouverNombre()">
+
+    </fieldset>
+
+    <script src="main.js"></script>
+</body>
+</html>
